@@ -203,7 +203,7 @@
     </div>
     <ul class="fab-options">
         <li>
-            <a href="https://instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/" target="_blank">
                 <div class="fab-icon-holder" style="background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);">
                     <i class="fab fa-instagram ml-0"></i>
                 </div>
@@ -221,6 +221,54 @@
 
 </div>
 </div>
+
+    <!-- Content -->
+    <div class="tes" id="tes">
+        <div class="container">
+          <div class="box-tes">
+            <div class="box">
+              <img src="assets/img/ads/ads1.jpg" alt="Poster" />
+              <!-- <h3>Iklan</h3> -->
+              <!-- <p>blabalbala</p> -->
+              <button>
+                <a href="https://www.instagram.com/myup_storee"
+                  >Lihat</a>
+              </button>
+            </div>
+            <div class="box">
+              <img src="assets/img/ads/ads1.jpg" alt="Video" />
+              <!-- <h3>Iklan 2</h3> -->
+              <!-- <p>blabalbala</p> -->
+              <button>
+                <a href="https://www.instagram.com/myup_storee"
+                  >Tonton</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content-->
+
+ <!-- Contact -->
+ <div class="contact" id="contact">
+    <div class="container">
+        <div class="card-container">
+            <form action="https://formsubmit.co/el/vunoba" method="POST" />
+                <h2>Contact Us</h2>
+                <input type="text" id="first_name" name="first_name" placeholder="First Name" required/>
+                <input type="text" id="last_name" name="last_name" placeholder="Last Name" required/>
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <textarea id="message" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+                <button type="submit" name="submit" value="Submit">Submit</button>
+                <div id="warning"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+
+
+
   <!-- logo costumer -->
 <div class="footer">
     <div class="container">
@@ -751,6 +799,183 @@ flash-sale-carousel .swiper-wrapper .swiper-slide .contents .text-area__prize {
     width: 42.5vw;
 }
 }
+
+.tes {
+    padding: 50px 0 50px 0;
+  }
+  
+  .tes .box-tes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    row-gap: 50px;
+  }
+  
+  .tes .box-tes .box {
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  
+  .tes .box-tes .box:hover {
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+  }
+  
+  .tes .box-tes .box img {
+    max-width: 100%;
+    min-height: 200px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .tes .box-tes .box p {
+    font-weight: 100px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .tes .box-tes .box button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #0050b3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .tes .container .box-tes .box button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tes .box-tes .box button:hover {
+    background-color: #053e83;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+.tes .box-tes {
+    grid-template-columns: repeat(repeat(auto-fit, minmax(250px, 1fr)));
+  }
+
+
+.contact {
+    padding: 25px;
+  }
+  
+  .contact container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 522px;
+    min-width: 370px;
+  }
+  
+  .contact card-container {
+    display: flex;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #eee;
+    text-align: center;
+  }
+  
+  .contact input,
+  textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  
+  .contact input:focus,
+  textarea:focus {
+    outline: 1px solid #00b4cf;
+  }
+  
+  /* .contact input #status {
+    text-align: left;
+  } */
+  
+  .contact label {
+    color: #eee;
+    font-size: 12px;
+  }
+  
+  /* .contact textarea {
+    height: 90px;
+  } */
+  
+  .contact #warning {
+    color: #eee;
+    font-size: 12px;
+  }
+  
+  /* .makeover{
+    vertical-align: middle;
+    margin-top: -1px;
+  }
+  body{
+          line-height: 30px;
+    width: 300px;
+    margin:auto;
+    background: #CCC;
+  } */
+  
+  .contact button {
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #0050b3;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+  
+  .contact button:hover {
+    background-color: #053e83;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    cursor: pointer;
+  }
 </style>
 <style>
   #result {
